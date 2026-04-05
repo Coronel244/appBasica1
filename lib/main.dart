@@ -120,3 +120,37 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+
+
+class SecondScreen extends StatelessWidget {
+  const SecondScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue[800],
+        title: const Text('Segunda Pantalla'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              '¡Bienvenido a la segunda pantalla!',
+              style: TextStyle(fontSize: 20),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context); // Regresa a la primera pantalla
+              },
+              child: const Text('Volver'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
