@@ -1,17 +1,22 @@
-# appbasica
+# AppBasica
 
-A new Flutter project.
+## Descripción
+Este proyecto demuestra la correcta instalación y configuración de Flutter, la creación de una aplicación básica y la implementación de funcionalidades esenciales como:
 
-## Getting Started
+- Cambio de título y texto principal.
+- Cambio de color del AppBar.
+- Botón funcional con SnackBar.
+- Navegación entre pantallas usando Navigator.push y Navigator.pop.
 
-This project is a starting point for a Flutter application.
+## Capturas de la app
 
-A few resources to get you started if this is your first Flutter project:
+### Primera pantalla
+![Primera pantalla](assets/screenshots/pantalla1.png)
 
+### Segunda pantalla
+![Segunda pantalla](assets/screenshots/pantalla2.png)
+
+## Recursos
 - [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
 - [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
