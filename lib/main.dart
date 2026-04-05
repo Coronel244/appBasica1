@@ -154,8 +154,17 @@ class SecondScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              '¡Bienvenido a la segunda pantalla!',
-              style: TextStyle(fontSize: 20),
+              'Actividad Integradora 1\nAplicaciones Móviles',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 20),
+            // Imagen opcional
+            Image.asset(
+              'assets/screenshots/pantalla2.png',
+              width: 150, // ajusta tamaño
+              height: 150,
+              fit: BoxFit.contain,
             ),
             const SizedBox(height: 20),
             ElevatedButton(
