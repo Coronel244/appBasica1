@@ -118,6 +118,15 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('Prueba botón funcional'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SecondScreen()),
+                );
+              },
+              child: const Text('Ir a segunda pantalla'),
+            ),
           ],
         ),
       ),
@@ -129,8 +138,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
