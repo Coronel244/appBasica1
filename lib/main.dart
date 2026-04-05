@@ -118,6 +118,15 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('Prueba botón funcional'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SecondScreen()),
+                );
+              },
+              child: const Text('Ir a segunda pantalla'),
+            ),
           ],
         ),
       ),
@@ -125,6 +134,38 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+class SecondScreen extends StatelessWidget {
+  const SecondScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue[800],
+        title: const Text('Segunda Pantalla'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              '¡Bienvenido a la segunda pantalla!',
+              style: TextStyle(fontSize: 20),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context); // Regresa a la primera pantalla
+              },
+              child: const Text('Volver'),
+            ),
+          ],
+        ),
       ),
     );
   }
