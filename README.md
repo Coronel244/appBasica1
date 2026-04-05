@@ -11,10 +11,10 @@ Este proyecto demuestra la correcta instalación y configuración de Flutter, la
 ## Capturas de la app
 
 ### Primera pantalla
-![Primera pantalla](assets/screenshots/pantalla1.png)
+![Primera pantalla](assets/pantalla1.jpg)
 
 ### Segunda pantalla
-![Segunda pantalla](assets/screenshots/pantalla2.png)
+![Segunda pantalla](assets/pantalla2.jpg)
 
 ## Recursos
 - [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
